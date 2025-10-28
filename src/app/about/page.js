@@ -19,7 +19,7 @@ export default function About() {
               <Image
                 src="/img/cb2.webp"
                 width={710}
-                height={559}
+                height={559} style={{ width: "100%", height: "auto" }}
                 className="img-fluid object-fit-contain rounded"
                 alt="Nhà hàng Sincay"
                 priority
