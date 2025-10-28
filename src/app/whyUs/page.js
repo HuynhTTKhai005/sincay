@@ -31,7 +31,7 @@ export default function WhyUs() {
                   <h4>Cấp độ cay đa dạng</h4>
                   <p>
                     Từ cấp độ 0 đến cấp độ 7, bạn có thể chọn độ cay phù hợp với khẩu vị
-                    hoặc thử thách bản thân với những cấp độ
+                    hoặc thử thách bản thân với những cấp độ cao hơn. Cứ thoải mái thử thách bản thân.
                   </p>
                 </div>
               </div>

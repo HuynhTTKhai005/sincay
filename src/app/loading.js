@@ -8,7 +8,7 @@ export default function Preloader() {
     useEffect(() => {
         const handleLoad = () => setLoaded(true);
 
-         const timeout = setTimeout(() => setLoaded(true), 3000);
+        const timeout = setTimeout(() => setLoaded(true), 1000);
 
         window.addEventListener("load", handleLoad);
 

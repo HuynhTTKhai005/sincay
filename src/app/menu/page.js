@@ -8,6 +8,12 @@ export default function Menu() {
 
   useEffect(() => {
     setIsMounted(true);
+
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+    });
+
+    return () => lightbox.destroy();
   }, []);
 
   return (
