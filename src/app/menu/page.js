@@ -7,13 +7,9 @@ export default function Menu() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
-
-    const lightbox = GLightbox({
-      selector: '.glightbox',
-    });
-
-    return () => lightbox.destroy();
+    if (typeof window !== "undefined") {
+      GLightbox({ selector: ".glightbox" });
+    }
   }, []);
 
   return (
