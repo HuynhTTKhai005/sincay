@@ -1,8 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react';
 import menuData from "../../../public/data/menuData";
-import Image from "next/image"; import GLightbox from "glightbox";
- 
+import Image from "next/image";  
+
 
 export default function Menu() {
   const [isMounted, setIsMounted] = useState(false);
@@ -11,7 +11,6 @@ export default function Menu() {
     setIsMounted(true);
 
     if (typeof window !== "undefined") {
-      // dynamic import GLightbox
       const GLightbox = require("glightbox");
       GLightbox({ selector: ".glightbox" });
     }
