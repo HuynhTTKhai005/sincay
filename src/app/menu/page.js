@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import menuData from "../../../public/data/menuData";
-import Image from "next/image";  
+import Image from "next/image";
 
 
 export default function Menu() {
@@ -12,7 +12,14 @@ export default function Menu() {
 
     if (typeof window !== "undefined") {
       const GLightbox = require("glightbox");
-      GLightbox({ selector: ".glightbox" });
+      const lightbox = GLightbox({ selector: ".glightbox" });
+
+      // Cleanup: chỉ destroy khi lightbox tồn tại
+      return () => {
+        if (lightbox && typeof lightbox.destroy === "function") {
+          lightbox.destroy();
+        }
+      };
     }
   }, []);
 
